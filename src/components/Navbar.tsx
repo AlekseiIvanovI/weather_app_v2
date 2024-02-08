@@ -3,6 +3,7 @@
 import React from 'react'
 import { TiWeatherCloudy } from "react-icons/ti";
 import { CiLocationArrow1 } from "react-icons/ci";
+import { IoLocationOutline } from "react-icons/io5";
 
 type Props = {}
 
@@ -28,10 +29,11 @@ export default function NavBar({}: Props) {
             '>
             <p className="flex items-center justify-center gap-2  ">
                 <h2 className="text-gray-500 text-3xl">Weather</h2>
-                <TiWeatherCloudy className='text-blue-500 h-[50px] w-[50px] '/>
+                <TiWeatherCloudy className='text-3xl text-blue-500 h-[50px] w-[50px] '/>
             </p>
           <section className='flex gap-2 items-center'>
-            <CiLocationArrow1 className='text-blue-500 h-[30px] w-[30px]'/>
+            <CiLocationArrow1 className='text-2xl text-blue-700 h-[30px] w-[30px] hover:opacity-50 cursor-pointer'/>
+            <IoLocationOutline className='text-3xl text-gray-900 h-[30px] w-[30px] hover:opacity-50 cursor-pointer'/>
           </section>
         </div>
     </nav>
