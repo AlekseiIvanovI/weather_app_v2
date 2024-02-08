@@ -1,4 +1,7 @@
+/** @format */
+
 import React from 'react'
+import { TiWeatherCloudy } from "react-icons/ti";
 
 type Props = {}
 
@@ -22,9 +25,14 @@ export default function NavBar({}: Props) {
             px-3 
             mx-auto
             '>
-            <p className='flex items-center justify-center gap-2'>
-                <h2 className='text-gray-500 text-3xl'>Weather</h2>
-            </p>
+            <p className="flex items-center justify-center gap-2  ">
+            <h2 className="text-gray-500 text-3xl">Weather</h2>
+            <TiWeatherCloudy className='text-blue-500 h-[50px] w-[50px] '/>
+          </p>
+          <section>
+            
+
+          </section>
         </div>
     </nav>
   )
