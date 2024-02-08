@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { TiWeatherCloudy } from "react-icons/ti";
+import { CiLocationArrow1 } from "react-icons/ci";
 
 type Props = {}
 
@@ -26,12 +27,11 @@ export default function NavBar({}: Props) {
             mx-auto
             '>
             <p className="flex items-center justify-center gap-2  ">
-            <h2 className="text-gray-500 text-3xl">Weather</h2>
-            <TiWeatherCloudy className='text-blue-500 h-[50px] w-[50px] '/>
-          </p>
-          <section>
-            
-
+                <h2 className="text-gray-500 text-3xl">Weather</h2>
+                <TiWeatherCloudy className='text-blue-500 h-[50px] w-[50px] '/>
+            </p>
+          <section className='flex gap-2 items-center'>
+            <CiLocationArrow1 className='text-blue-500 h-[30px] w-[30px]'/>
           </section>
         </div>
     </nav>
