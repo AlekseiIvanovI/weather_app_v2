@@ -34,6 +34,10 @@ export default function NavBar({}: Props) {
           <section className='flex gap-2 items-center'>
             <CiLocationArrow1 className='text-2xl text-blue-700 h-[30px] w-[30px] hover:opacity-50 cursor-pointer'/>
             <IoLocationOutline className='text-3xl text-gray-900 h-[30px] w-[30px] hover:opacity-50 cursor-pointer'/>
+            <p className='text-state-900/80 text-sm'> Citrus Heights </p>
+            <div>
+              {/*search bar */}
+            </div>
           </section>
         </div>
     </nav>
