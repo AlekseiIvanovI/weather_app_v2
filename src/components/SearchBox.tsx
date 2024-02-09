@@ -1,12 +1,23 @@
+import { cn } from '@/utils/cn';
 import React from 'react'
 import { IoIosSearch } from "react-icons/io";
 
-type Props = {}
+type Props = {
+className?: string;
+value: string;
+onChange: React.ChangeEventHandler<HTMLInputElement> | undefined;
+onSubmit: React.FormEventHandler<HTMLFormElement> | undefined;
 
-export default function SearchBox({}: Props) {
+}
+
+export default function SearchBox(props: Props) {
   return (
-    <form className='flex relative items-center justify-center h-10'>
-        <input type="text" placeholder='Search' 
+    <form className={cn('flex relative items-center justify-center h-10', props.className)} 
+            onSubmit={props.onSubmit}>
+        <input type="text" 
+            placeholder='Search' 
+            onChange={props.onChange} 
+            value={props.value}
         className='
             px-4 
             py-2 
@@ -25,7 +36,6 @@ export default function SearchBox({}: Props) {
             rounded-r-md
             focus:outline-none
             hover:bg-blue-600
-            whitespace-nowrap
             h-full
         '>
             <IoIosSearch />
