@@ -4,6 +4,7 @@ import React from 'react'
 import { TiWeatherCloudy } from "react-icons/ti";
 import { CiLocationArrow1 } from "react-icons/ci";
 import { IoLocationOutline } from "react-icons/io5";
+import SearchBox from './SearchBox';
 
 type Props = {}
 
@@ -36,7 +37,7 @@ export default function NavBar({}: Props) {
             <IoLocationOutline className='text-3xl text-gray-900 h-[30px] w-[30px] hover:opacity-50 cursor-pointer'/>
             <p className='text-state-900/80 text-sm'> Citrus Heights </p>
             <div>
-              {/*search bar */}
+              <SearchBox/>
             </div>
           </section>
         </div>
