@@ -1,6 +1,6 @@
 import { cn } from '@/utils/cn';
 import React from 'react'
-import { CiSearch } from "react-icons/ci";
+import { FaSearch } from "react-icons/fa";
 
 type Props = {
     className?: string;
@@ -40,7 +40,7 @@ export default function SearchBox(props: Props) {
         h-full
         
         '>
-            <CiSearch />
+            <FaSearch />
         </button>
     </form>
   )
