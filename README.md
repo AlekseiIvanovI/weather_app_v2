@@ -21,4 +21,35 @@ This Weather App is built using Next.js, Tailwind CSS, and TypeScript. It allows
 
    ```bash
    git clone https://github.com/your-username/weather-app.git
+   
+2. Navigate into the project directory:
 
+bash
+cd weather-app
+
+3. Install dependencies:
+
+bash
+
+npm install
+
+4. Set up environment variables:
+
+Create a .env.local file in the root directory of the project and add your OpenWeatherMap API key:
+
+env
+
+NEXT_PUBLIC_WEATHER_KEY=your-api-key
+
+5. Start the development server:
+
+bash
+Copy code
+npm run dev
+Open your browser and visit http://localhost:3000 to view the app.
+
+Deployment
+To deploy the app to production, you can use platforms like Vercel, Netlify, or GitHub Pages. Make sure to set up environment variables in your deployment environment as well.
+
+Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
