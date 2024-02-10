@@ -24,9 +24,10 @@ This Weather App is built using Next.js, Tailwind CSS, and TypeScript. It allows
    cd weather-app
 
 3. Install dependencies:
+   
    npm install
 
-4. Set up environment variables:
+5. Set up environment variables:
 
    Create a .env.local file in the root directory of the project and add your OpenWeatherMap API key:
    
@@ -34,10 +35,10 @@ This Weather App is built using Next.js, Tailwind CSS, and TypeScript. It allows
 
 
 
-5. Start the development server:
+6. Start the development server:
    npm run dev
 
-6. Open your browser and visit http://localhost:3000 to view the app.
+7. Open your browser and visit http://localhost:3000 to view the app.
 
    Deployment
    To deploy the app to production, you can use platforms like Vercel, Netlify, or GitHub Pages. Make sure to set up environment variables in your deployment environment as well.
