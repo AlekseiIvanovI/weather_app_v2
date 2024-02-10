@@ -36,7 +36,8 @@ This Weather App is built using Next.js, Tailwind CSS, and TypeScript. It allows
 
 5. Start the development server:
    npm run dev
-   Open your browser and visit http://localhost:3000 to view the app.
+
+6. Open your browser and visit http://localhost:3000 to view the app.
 
    Deployment
    To deploy the app to production, you can use platforms like Vercel, Netlify, or GitHub Pages. Make sure to set up environment variables in your deployment environment as well.
