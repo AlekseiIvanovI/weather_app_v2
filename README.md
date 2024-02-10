@@ -33,7 +33,8 @@ This Weather App is built using Next.js, Tailwind CSS, and TypeScript. It allows
    NEXT_PUBLIC_WEATHER_KEY=your-api-key
 
 
-6. Start the development server:
+
+5. Start the development server:
    npm run dev
    Open your browser and visit http://localhost:3000 to view the app.
 
