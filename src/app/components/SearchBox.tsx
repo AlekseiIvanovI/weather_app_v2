@@ -1,12 +1,23 @@
+import { cn } from '@/utils/cn';
 import React from 'react'
 import { CiSearch } from "react-icons/ci";
 
-type Props = {}
+type Props = {
+    className?: string;
+    value: string;
+    onChange: React.ChangeEventHandler<HTMLInputElement> | undefined;
+    onSubmit: React.FormEventHandler<HTMLFormElement> | undefined;
 
-export default function SearchBox({}: Props) {
+}
+
+export default function SearchBox(props: Props) {
   return (
-    <form className='flex relative items-center justify-center h-10'>
-        <input type="text" placeholder='Search'
+    <form 
+    onSubmit={props.onSubmit} 
+    className={cn('flex relative items-center justify-center h-10', props.className)}
+    
+    >
+        <input type="text" placeholder='Search' value={props.value} onChange={props.onChange}
             className='
             px-4 
             py-2 
@@ -26,7 +37,6 @@ export default function SearchBox({}: Props) {
         rounded-r-md 
         focus:outline-none 
         hover:bg-blue-700
-        whitespace-nowrap 
         h-full
         
         '>
