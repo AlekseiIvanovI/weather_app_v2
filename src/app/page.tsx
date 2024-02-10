@@ -8,6 +8,7 @@ import { format, parseISO } from "date-fns";
 import Container from "./components/Container";
 import { convertKelvinToCelsius } from "@/utils/convertKelvinToCelsius";
 import WeatherIcon from "./components/WeatherIcon";
+import { getDayOrNightIcon } from "@/utils/getDayOrNightIcon";
 
 
 
@@ -119,7 +120,8 @@ export default function Home() {
                         {format(parseISO(d.dt_txt), 'h:mm a')}
 
                       </p>
-                      <WeatherIcon iconName={d.weather[0].icon}/>
+                      {/* <WeatherIcon iconName={d.weather[0].icon}/> */}
+                      <WeatherIcon iconName={getDayOrNightIcon(d.weather[0].icon,d.dt_txt)}/>
                       <p>{convertKelvinToCelsius(d?.main.temp ?? 0)}°</p>
                   </div>
                 ))}
@@ -127,8 +129,8 @@ export default function Home() {
             </Container>
           </div>
         </section>
-        <section>
-          
+        <section className="flex w-full flex-col gap-4">
+          <p className="text-2xl">Forecast (7 days)</p>
         </section>
       </main>
     </div>
