@@ -19,12 +19,9 @@ This Weather App is built using Next.js, Tailwind CSS, and TypeScript. It allows
 
 1. Clone the repository:
 
-   ```bash
    git clone https://github.com/your-username/weather-app.git
    
 2. Navigate into the project directory:
-
-bash
 cd weather-app
 
 3. Install dependencies:
@@ -32,6 +29,7 @@ cd weather-app
 bash
 
 npm install
+
 
 4. Set up environment variables:
 
@@ -41,11 +39,11 @@ env
 
 NEXT_PUBLIC_WEATHER_KEY=your-api-key
 
+
 5. Start the development server:
 
-bash
-Copy code
 npm run dev
+
 Open your browser and visit http://localhost:3000 to view the app.
 
 Deployment
