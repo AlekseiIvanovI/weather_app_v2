@@ -1,5 +1,8 @@
 import React from 'react'
 import { TiWeatherPartlySunny } from "react-icons/ti";
+import { CiLocationArrow1 } from "react-icons/ci";
+import { CiLocationOn } from "react-icons/ci";
+import SearchBox from './SearchBox';
 
 type Props = {}
 
@@ -11,6 +14,15 @@ export default function Navbar({}: Props) {
                 <h2 className='text-gray-500 text-3xl'>Weather</h2>
                 <TiWeatherPartlySunny className='text-3xl mt-1 text-blue-700'/>
             </p>
+            {/* */}
+            <section className='flex gap-2 items-center'>
+                <CiLocationArrow1 className='text-3xl text-blue-700 hover:opacity-50 cursor-pointer'/>
+                <CiLocationOn className='text-3xl hover:opacity-50 cursor-pointer'/>
+                <p className='text-slate-900/80 text-sm'> Citrus Heights  </p>
+                <div>
+                    <SearchBox />
+                </div>
+            </section>
         </div>
     </div>
   )
