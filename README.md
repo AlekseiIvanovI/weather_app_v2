@@ -21,6 +21,7 @@ This Weather App is built using Next.js, Tailwind CSS, and TypeScript. It allows
    git clone https://github.com/your-username/weather-app.git
    
 2. Navigate into the project directory:
+   
    cd weather-app
 
 3. Install dependencies:
