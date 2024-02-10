@@ -9,6 +9,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useAtom } from "jotai";
 import { loadingCityAtom, placeAtom } from "../atom";
+import { FaCloud } from "react-icons/fa";
 
 type Props = { location?: string };
 
@@ -91,7 +92,7 @@ export default function Navbar({ location }: Props) {
         <div className="h-[80px]     w-full    flex   justify-between items-center  max-w-7xl px-3 mx-auto">
           <p className="flex items-center justify-center gap-2  ">
             <h2 className="text-gray-500 text-3xl">Weather</h2>
-            <MdWbSunny className="text-3xl mt-1 text-yellow-300" />
+            <FaCloud className="text-3xl mt-1 text-blue-500" />
           </p>
           {/*  */}
           <section className="flex gap-2 items-center">
