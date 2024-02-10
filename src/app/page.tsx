@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import { useQuery } from "react-query";
 import axios from "axios";
 
-// https://api.openweathermap.org/data/2.5/forecast?q=pune&appid=d95922d13cd8a9465a7af0e13e0db93b&cnt=56
+
 
 
 interface WeatherData {
