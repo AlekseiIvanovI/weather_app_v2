@@ -29,10 +29,11 @@ This Weather App is built using Next.js, Tailwind CSS, and TypeScript. It allows
 4. Set up environment variables:
 
    Create a .env.local file in the root directory of the project and add your OpenWeatherMap API key:
+   
    NEXT_PUBLIC_WEATHER_KEY=your-api-key
 
 
-5. Start the development server:
+6. Start the development server:
    npm run dev
    Open your browser and visit http://localhost:3000 to view the app.
 
