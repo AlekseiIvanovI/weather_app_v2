@@ -278,7 +278,6 @@ function WeatherSkeleton() {
           <div className="h-6 w-24 bg-gray-300 rounded"></div>
         </div>
 
-        {/* Time wise temperature skeleton */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[1, 2, 3, 4].map((index) => (
             <div key={index} className="flex flex-col items-center space-y-2">
@@ -290,7 +289,6 @@ function WeatherSkeleton() {
         </div>
       </div>
 
-      {/* 7 days forecast skeleton */}
       <div className="flex flex-col gap-4 animate-pulse">
         <p className="text-2xl h-8 w-36 bg-gray-300 rounded"></p>
 
